@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--회원가입 화면 text 디자인-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="20dp"/>
+    <stroke
+        android:color="@color/orange"
+        android:width="4dp"
+        />
+
+</shape>
