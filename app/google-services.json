@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "625244742447",
+    "project_id": "kotlinchat-89f70",
+    "storage_bucket": "kotlinchat-89f70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625244742447:android:f076f7f50a0f344c3b37da",
+        "android_client_info": {
+          "package_name": "com.suki.chatting"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGZeFNO6SRh4nTjTtQQDJnjkUn-hPUdvA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
