@@ -18,11 +18,6 @@ class LogInActivity : AppCompatActivity() {
 
 //        enableEdgeToEdge()
 //        setContentView(R.layout.activity_log_in) // xml 파일
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-//            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-//            insets
-//        }
 
         // 뷰바인딩 설정을 했기 때문에 버튼에 접근하기 위한 객체를 만들지 않아도 됨.
         // 회원가입 버튼 이벤트
