@@ -34,7 +34,7 @@ class SignUpActivity : AppCompatActivity() {
             val email = binding.emailText.text.toString().trim()
             val password = binding.passwordText.text.toString().trim()
 
-            signUp(email, password)
+            signUp(email, password) // 회원가입 함수
         }
         
     }
@@ -50,7 +50,8 @@ class SignUpActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT,
                     ).show()
 
-                    val intent: Intent = Intent(this@SignUpActivity, MainActivity::class.java)
+                    // MainActivity로 전환
+                    val intent: Intent = Intent(this@SignUpActivity, LogInActivity::class.java)
                     startActivity(intent)
 
                 } else { // 회원가입 실패
