@@ -11,11 +11,11 @@
     <ImageView
         android:id="@+id/logo_image"
 
-        android:layout_width="170dp"
-        android:layout_height="145dp"
+        android:layout_width="150dp"
+        android:layout_height="129dp"
 
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="130dp"
         android:src="@drawable/logo" />
 
 <!--    이메일-->

@@ -1,7 +1,11 @@
 package com.suki.chatting
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -63,9 +67,31 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
+    }
 
+    // 화면에 메뉴바 추가
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
 
+    // 로그아웃 아이템 선택 이벤트
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.logOut) {
+            mAuth.signOut() // 인증서비스 로그아웃
 
+            // LoginActivity로 이동
+            val intent = Intent(this@MainActivity, LogInActivity::class.java)
+            startActivity(intent)
+            finish()
+            Toast.makeText(
+                baseContext,
+                "로그아웃",
+                Toast.LENGTH_SHORT,
+            ).show()
 
+            return true
+        }
+        return true
     }
 }
