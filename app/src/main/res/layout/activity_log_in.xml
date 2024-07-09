@@ -26,7 +26,7 @@
 
         android:layout_below="@id/logo_image"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="45dp"
         android:layout_marginRight="20dp"
         android:paddingStart="15dp"
 
@@ -42,7 +42,7 @@
 
         android:layout_below="@id/email_text"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:paddingStart="15dp"
 
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
 
         android:layout_below="@id/password_text"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="45dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/button_design"
         android:text="로그인"
