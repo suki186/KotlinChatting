@@ -18,10 +18,8 @@ import com.suki.chatting.databinding.ActivitySignUpBinding
 class SignUpActivity : AppCompatActivity() {
 
     lateinit var binding: ActivitySignUpBinding
-    lateinit var mAuth: FirebaseAuth // 인증 서비스 객체
+    lateinit var mAuth: FirebaseAuth // 인증서비스 객체
     private lateinit var mDB: DatabaseReference // 데이터베이스 객체
-    //val database = Firebase.database("https://kotlinchat-89f70-default-rtdb.asia-southeast1.firebasedatabase.app")
-    //var mDB = database.getReference("message")
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,8 +31,6 @@ class SignUpActivity : AppCompatActivity() {
 
         mAuth = Firebase.auth // 인증 서비스 객체 초기화
         mDB = Firebase.database.reference // 데이터베이스 객체 초기화
-
-        //mDB = Firebase.database("https://kotlinchat-89f70-default-rtdb.asia-southeast1.firebasedatabase.app").reference // 데이터베이스 객체 초기화
 
         // 가입하기 버튼 이벤트
         binding.SignupBtn.setOnClickListener {
