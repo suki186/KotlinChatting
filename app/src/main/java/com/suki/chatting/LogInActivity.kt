@@ -25,11 +25,9 @@ class LogInActivity : AppCompatActivity() {
 
         enableEdgeToEdge()
         setContentView(binding.root)
+        // setContentView(R.layout.activity_log_in) // xml 파일
 
-        // 인증 서비스 초기화
-        mAuth = Firebase.auth
-
-//        setContentView(R.layout.activity_log_in) // xml 파일
+        mAuth = Firebase.auth // 인증 서비스 초기화
 
         // 뷰바인딩 설정을 했기 때문에 버튼에 접근하기 위한 객체를 만들지 않아도 됨.
         // 로그인 버튼 이벤트
