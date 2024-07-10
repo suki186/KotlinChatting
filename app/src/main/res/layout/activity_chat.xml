@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+<!--    메세지 보이는 화면-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/message_layout"/>
+
+<!--    메세지 입력과 전송 버튼-->
+    <LinearLayout
+        android:id="@+id/message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+<!--        메세지 입력창-->
+        <EditText
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="85"
+
+            android:layout_marginStart="10dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/background_design"
+            android:hint="메세지를 입력하세요" />
+        
+<!--        메세지 전송 버튼-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sendMsgBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="15"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_design"
+            android:text="전송"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

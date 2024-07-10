@@ -1,6 +1,7 @@
 package com.suki.chatting
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,6 +32,17 @@ class UserAdapter(private val context: Context, private val userList: ArrayList<
 
         val currentUser = userList[position] // userList에 있는 데이터를 순서대로 currentUser에 넣음
         holder.nameText.text = currentUser.nickname // currentUser에 들어온 nickname을 TextView에 넣음
+
+        // 채팅목록 클릭 이벤트 (채팅방 화면으로 이동)
+        holder.itemView.setOnClickListener {
+
+            val intent = Intent(context, ChatActivity::class.java)
+            // 넘길 데이터 담기
+            intent.putExtra("nickname", currentUser.nickname)
+            intent.putExtra("uid", currentUser.uId)
+
+            context.startActivity(intent) // 데이터를 담아 ChatActivity로 전송
+        }
     }
 
     // ----------- View를 전달 받아 user_list의 TextView 객체를 만드는 class ------

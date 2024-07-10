@@ -6,5 +6,5 @@ data class User(
     var email: String,
     var uId: String
 ){
-    constructor(): this("", "", "")
+    constructor(): this("", "", "") // 기본 생성자
 }
